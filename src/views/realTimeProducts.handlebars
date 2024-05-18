@@ -1,0 +1,20 @@
+<!-- VIVIRÁ EN EL ENDPOINT '/realtimeproducts' Y VA A TENER LA MISMA LISTA DE PRODUCTOS PERO CON WEBSOCKETS -->
+<div>
+    <!-- ACÁ GENERAR EL FORMULARIO PARA AGREGAR PRODUCTOS Y ELIMINAR -->
+    <div>
+    <h1>REGISTRARSE:</h1>
+        <label for="name"> Nombre del producto: </label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br> <br>
+        <label for="email"> Precio: </label>
+        <br>
+        <input type="text" id="price" name="price" required>
+        <br><br>
+        <button id="btn-cargar" onclick="cargarProducto()">Cargar</button>
+    </div>
+  
+    <div id="todos-los-productos"></div>
+
+<script src="/socket.io/socket.io.js"></script> <!-- DEL LADO DEL SERVIDOR -->
+<script src="/js/index.js"></script> <!--DEL LADO DEL CLIENTE -->

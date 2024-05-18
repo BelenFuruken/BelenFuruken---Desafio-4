@@ -1,0 +1,8 @@
+<!-- TIENE QUE CONTENER UNA LISTA DE TODOS LOS PRODUCTOS AGREGADOS HASTA EL MOMENTO -->
+
+<h1>PRODUCTOS AGREGADOS HASTA EL MOMENTO: </h1>
+{{#each prod}} 
+    <div>
+        <li>{{this.producto}}: ${{this.precio}}</li>
+    </div>
+{{/each}}
